@@ -1,0 +1,16 @@
+*.mp4
+*.log
+*.iml
+*.class
+*.odt
+*.png
+*.pdf
+*.txt
+*.classpath
+*.project
+*.odt#
+*.jar
+bin/ 
+target/
+/Maven/target/classes
+.idea/
