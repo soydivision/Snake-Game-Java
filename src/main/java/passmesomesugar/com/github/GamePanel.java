@@ -22,7 +22,7 @@ public class GamePanel extends JPanel implements ActionListener {
     int appleX;
     int appleY;
     char direction = 'R';
-    boolean running = false;
+    boolean running = true;
     Timer timer;
     Random random;
 
@@ -106,6 +106,12 @@ public class GamePanel extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (running) {
+            move();
+            checkApple();
+            checkCollisions();
+        }
+        repaint();
     }
 
     public class MyKeyAdapter extends KeyAdapter {
