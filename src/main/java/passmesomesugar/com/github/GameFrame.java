@@ -3,7 +3,7 @@ package passmesomesugar.com.github;
 import javax.swing.*;
 
 public class GameFrame extends JFrame {
-    GameFrame() {
+    GameFrame() {//tutorial version game
         this.add(new GamePanel());
         this.setTitle("Snake");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
